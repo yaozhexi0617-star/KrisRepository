@@ -1,0 +1,7 @@
+﻿group,fairness,top1_min,list_min,list_avg,accept_rate
+random,mean,0.4847,0.4600,0.7724,0.28
+conflict,mean,0.6441,0.5537,0.8081,0.44
+random,min,0.6825,0.6484,0.6972,0.32
+conflict,min,0.7544,0.7083,0.7537,0.44
+random,blend,0.6662,0.6281,0.7286,0.32
+conflict,blend,0.7424,0.6928,0.7788,0.44

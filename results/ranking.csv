@@ -1,0 +1,6 @@
+﻿model,recall@10,ndcg@10,coverage,n_users
+popular,0.0634,0.0299,0.0098,363
+itemknn,0.0854,0.0412,0.0140,363
+mf,0.0331,0.0190,0.0414,363
+mean_baseline_rmse,,1.1169,,
+mf_rmse,,0.9688,,

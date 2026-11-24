@@ -1,0 +1,94 @@
+{
+  "data": {
+    "users": 610,
+    "items": 9724,
+    "train": 100226,
+    "test": 610
+  },
+  "ranking": [
+    {
+      "model": "popular",
+      "recall": 0.06336088154269973,
+      "ndcg": 0.029920644622886117,
+      "coverage": 0.0097696421225833,
+      "n_users": 363
+    },
+    {
+      "model": "itemknn",
+      "recall": 0.08539944903581267,
+      "ndcg": 0.04122810253259406,
+      "coverage": 0.013986013986013986,
+      "n_users": 363
+    },
+    {
+      "model": "mf",
+      "recall": 0.03305785123966942,
+      "ndcg": 0.018995057532082308,
+      "coverage": 0.04144385026737968,
+      "n_users": 363
+    }
+  ],
+  "rmse": {
+    "mf": 0.968770642214474,
+    "mean_baseline": 1.116857213580451
+  },
+  "group": [
+    {
+      "fairness": "mean",
+      "group": "random",
+      "top1_min": 0.4846678550180287,
+      "min_satisfaction": 0.4600342333458037,
+      "avg_satisfaction": 0.7723617996749667,
+      "accept_rate": 0.28
+    },
+    {
+      "fairness": "mean",
+      "group": "conflict",
+      "top1_min": 0.6441249415234579,
+      "min_satisfaction": 0.5536992803233988,
+      "avg_satisfaction": 0.8080649136895535,
+      "accept_rate": 0.44
+    },
+    {
+      "fairness": "min",
+      "group": "random",
+      "top1_min": 0.6824521396326853,
+      "min_satisfaction": 0.6484303709187792,
+      "avg_satisfaction": 0.6971866682960791,
+      "accept_rate": 0.32
+    },
+    {
+      "fairness": "min",
+      "group": "conflict",
+      "top1_min": 0.7544305982423358,
+      "min_satisfaction": 0.7083085490689791,
+      "avg_satisfaction": 0.7537013111618005,
+      "accept_rate": 0.44
+    },
+    {
+      "fairness": "blend",
+      "group": "random",
+      "top1_min": 0.6662104832101976,
+      "min_satisfaction": 0.6281307652481702,
+      "avg_satisfaction": 0.7286247437325138,
+      "accept_rate": 0.32
+    },
+    {
+      "fairness": "blend",
+      "group": "conflict",
+      "top1_min": 0.7424279744296175,
+      "min_satisfaction": 0.6927945771576108,
+      "avg_satisfaction": 0.7787942478451404,
+      "accept_rate": 0.44
+    }
+  ],
+  "config": {
+    "K": 10,
+    "factors": 32,
+    "epochs": 30,
+    "lr": 0.01,
+    "reg": 0.05,
+    "seed": 2026
+  },
+  "elapsed_sec": 34.0
+}

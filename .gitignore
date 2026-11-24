@@ -1,0 +1,16 @@
+# 环境与数据（体积大、可重新生成）
+.venv/
+data/raw/
+data/cache/
+agent_cache.pkl
+model_mf.npz
+.mplcache/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 系统
+.DS_Store
+Thumbs.db
